@@ -27,3 +27,44 @@ WebUI.click(findTestObject('Payroll Loan Type/a_All Modules'))
 
 WebUI.click(findTestObject('Payroll Loan Type/div_Payroll Loan Types'), FailureHandling.STOP_ON_FAILURE)
 
+// Adding New Loan Type {
+WebUI.click(findTestObject('Payroll Loan Type/button_Create New'))
+
+WebUI.setText(findTestObject('Payroll Loan Type/Loan Type Inputs'), 'SSS SALARY LOAN')
+
+WebUI.setText(findTestObject('Payroll Loan Type/Loan Type Inputs'), 'TEST')
+
+WebUI.click(findTestObject('Payroll Loan Type/button_Submit'))
+
+WebUI.click(findTestObject('Payroll Loan Type/btn_ShowConfirmDialog-OK'))
+
+// }
+// Adding New Loan Type {
+WebUI.click(findTestObject('Payroll Loan Type/button_Create New'))
+
+WebUI.setText(findTestObject('Payroll Loan Type/Loan Type Inputs'), 'SSS LOAN')
+
+WebUI.setText(findTestObject('Payroll Loan Type/Loan Type Inputs'), 'TEST')
+
+WebUI.click(findTestObject('Payroll Loan Type/button_Submit'))
+
+WebUI.click(findTestObject('Payroll Loan Type/btn_ShowConfirmDialog-OK'))
+
+// }
+// Adding New Loan Type {
+WebUI.click(findTestObject('Payroll Loan Type/button_Create New'))
+
+WebUI.setText(findTestObject('Payroll Loan Type/Loan Type Inputs'), 'HDMF LOAN')
+
+WebUI.setText(findTestObject('Payroll Loan Type/Loan Type Inputs'), 'HDMF LOAN')
+
+WebUI.click(findTestObject('Payroll Loan Type/button_Submit'))
+
+WebUI.click(findTestObject('Payroll Loan Type/btn_ShowConfirmDialog-OK'))
+
+WebUI.click(findTestObject('Payroll Loan Type/div_SSS SALARY LOANTEST'))
+
+WebUI.click(findTestObject('Payroll Loan Type/a_Edit'))
+
+WebUI.click(findTestObject('Payroll Loan Type/btn_ShowConfirmDialog-OK'))
+
