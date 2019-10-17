@@ -12,24 +12,30 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import org.openqa.selenium.Keys as Keys
 
-WebUI.callTestCase(findTestCase('Login/Login_Successfully'), [:])
+WebUI.callTestCase(findTestCase('Login/Login_Successfully'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Payroll Adjustment Types/a_All Modules'), FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('Schedule Profile/Selecting Schedule Profile'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/Payroll Loan Type/div_Payroll Loan Types'), FailureHandling.STOP_ON_FAILURE)
+WebUI.setText(findTestObject('Schedule Profile/txt_search'), 'Standard ( 7:30 AM - 4:30 PM)')
 
-WebUI.click(findTestObject('Payroll Loan Type/a_Edit'))
+WebUI.click(findTestObject('Schedule Profile/btn_search'))
 
 WebUI.delay(1)
 
-PayrolltypeNameEdit = WebUI.modifyObjectProperty(findTestObject('Payroll Loan Type/Payroll Loans Type Edit/txt_Edit'), 
-    'value', 'not equal', '', true)
+WebUI.click(findTestObject('Schedule Profile/btn_Delete'))
 
-WebUI.setText(PayrolltypeNameEdit, 'sss')
+WebUI.delay(1)
 
-PayrolltypeNameEdit2 = WebUI.modifyObjectProperty(findTestObject('Payroll Loan Type/Payroll Loans Type Edit/txt_EditpayrollType_Description'),
-	'placeholder', 'not equal', '', true)
+WebUI.click(findTestObject('Schedule Profile/btgn_Delete_Yes'))
 
-WebUI.setText(PayrolltypeNameEdit2, 'sss')
+Search_Schedule_Profile = WebUI.modifyObjectProperty(findTestObject('Schedule Profile/txt_search'), 'value', 'not equal','', true)
+
+WebUI.setText(Search_Schedule_Profile,'')
+
+WebUI.click(findTestObject('Schedule Profile/btn_search'))
+
+WebUI.delay(2)
+
+WebUI.closeBrowser()
+
