@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>drp_Holiday_type</name>
+   <name>lst_Holiday_Type_Selection</name>
    <tag></tag>
-   <elementGuidId>f890e589-9139-437a-a5a2-69c541ef8e1a</elementGuidId>
+   <elementGuidId>1db12c0c-aae1-4587-92ce-d55394c2b02b</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@name='HolidayType']</value>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='SPECIAL HOLIDAY'])[2]/following::div[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'HolidayType' and (text() = 'LEGAL HOLIDAYLEGAL HOLIDAYSPECIAL HOLIDAYSUSPENDED' or . = 'LEGAL HOLIDAYLEGAL HOLIDAYSPECIAL HOLIDAYSUSPENDED')]</value>
+         <value>//*[(text() = '' or . = '')]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -24,23 +24,23 @@
       <value>div</value>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>HolidayType</value>
-   </webElementProperties>
-   <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>role</name>
       <type>Main</type>
-      <value>listbox</value>
+      <value>option</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>aria-expanded</name>
+      <name>aria-checked</name>
+      <type>Main</type>
+      <value>false</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-selected</name>
       <type>Main</type>
       <value>false</value>
    </webElementProperties>
@@ -49,55 +49,48 @@
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>ui fluid selection dropdown</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>tabindex</name>
-      <type>Main</type>
-      <value>0</value>
+      <value>item</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>text</name>
       <type>Main</type>
-      <value>LEGAL HOLIDAYLEGAL HOLIDAYSPECIAL HOLIDAYSUSPENDED</value>
+      <value></value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[@class=&quot;dimmable dimmed&quot;]/div[@class=&quot;ui page modals dimmer transition visible active&quot;]/div[@class=&quot;ui tiny modal transition visible active&quot;]/div[@class=&quot;content&quot;]/div[2]/div[3]/div[@class=&quot;ui fluid selection dropdown&quot;]</value>
+      <value>/html[1]/body[@class=&quot;dimmable dimmed&quot;]/div[@class=&quot;ui page modals dimmer transition visible active&quot;]/div[@class=&quot;ui tiny modal transition visible active&quot;]/div[@class=&quot;content&quot;]/div[2]/div[3]/div[@class=&quot;ui active visible fluid selection dropdown&quot;]/div[@class=&quot;visible menu transition&quot;]/div[@class=&quot;item&quot;]</value>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath:attributes</name>
+      <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>//div[@name='HolidayType']</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='SPECIAL HOLIDAY'])[2]/following::div[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Holiday Type'])[1]/following::div[1]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='LEGAL HOLIDAY'])[1]/following::div[2]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:neighbor</name>
       <type>Main</type>
-      <value>(.//*[normalize-space(text()) and normalize-space(.)='Title'])[1]/following::div[3]</value>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Universal'])[1]/preceding::div[1]</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div[3]/div</value>
+      <value>//div[3]/div/div[2]/div[3]</value>
    </webElementXpaths>
 </WebElementEntity>

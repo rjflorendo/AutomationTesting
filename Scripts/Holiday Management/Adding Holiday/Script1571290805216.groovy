@@ -33,9 +33,10 @@ WebUI.delay(1, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Holiday Management/Holiday Details/drp_Holiday_type'))
 
-WebUI.click(findTestObject('Holiday Management/Holiday Details/lst_Holiday_Type_LEGAL_HOLIDAY'))
+Holiday_Type = WebUI.modifyObjectProperty(findTestObject('Holiday Management/Holiday Details/lst_Holiday_Type_Selection'), 
+    'text', 'equals', 'LEGAL HOLIDAY', true)
 
-WebUI.delay(1)
+WebUI.click(Holiday_Type)
 
 WebUI.click(findTestObject('Holiday Management/Holiday Details/btn_Save'))
 
