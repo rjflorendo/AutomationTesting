@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Loan Type Inputs</name>
+   <name>txt_Edit</name>
    <tag></tag>
-   <elementGuidId>9c7789a1-d2ed-4e33-a159-3a6eacec37a5</elementGuidId>
+   <elementGuidId>0bb5e9db-0048-4024-a7ff-84e784a562a8</elementGuidId>
    <selectorCollection>
-      <entry>
-         <key>XPATH</key>
-         <value>(//input[@value=''])[3]</value>
-      </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[@placeholder = 'Loan Type' and @type = 'text']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.one:nth-child(1) > div:nth-child(1) > div:nth-child(2) > input:nth-child(1)</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='SSS LOAN']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -49,7 +53,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@value=''])[3]</value>
+      <value>//input[@value='SSS LOAN']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

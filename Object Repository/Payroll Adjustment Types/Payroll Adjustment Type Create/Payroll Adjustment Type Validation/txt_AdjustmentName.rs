@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Loan Type Inputs</name>
+   <name>txt_AdjustmentName</name>
    <tag></tag>
-   <elementGuidId>9c7789a1-d2ed-4e33-a159-3a6eacec37a5</elementGuidId>
+   <elementGuidId>66eff296-228a-46a7-8234-62174e6c70ee</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>(//input[@value=''])[3]</value>
+         <value>//input[@value='OT Allowance']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@placeholder = 'Loan Type' and @type = 'text']</value>
+         <value>//*[@placeholder = 'Payroll Adjustment Type' and @type = 'text' and @value != '']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -28,7 +32,7 @@
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
-      <value>Loan Type</value>
+      <value>Payroll Adjustment Type</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +40,13 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>not equal</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value></value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -49,7 +60,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>(//input[@value=''])[3]</value>
+      <value>//input[@value='OT Allowance']</value>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>

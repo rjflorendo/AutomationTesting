@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Payroll Loan Types</name>
+   <name>Payroll Loan Types Add</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b813535b-dcb9-4b40-b800-fed0398671b2</testCaseGuid>
